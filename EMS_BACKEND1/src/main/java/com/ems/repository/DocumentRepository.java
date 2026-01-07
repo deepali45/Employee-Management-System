@@ -1,0 +1,14 @@
+package com.ems.repository;
+
+import com.ems.entity.Document;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface DocumentRepository extends JpaRepository<Document, Long> {
+    List<Document> findByEmployeeEmployeeId(Long employeeId);
+    List<Document> findByDocumentType(String documentType);
+    List<Document> findByEmployeeEmployeeIdAndDocumentType(Long employeeId, String documentType);
+}

@@ -1,0 +1,22 @@
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #263238;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 12px 0;
+}
+
+.sidebar a:hover {
+  color: #4fc3f7;
+}
+.sidebar {
+  background: var(--card-bg);
+  color: var(--text-color);
+}
